@@ -1,0 +1,2 @@
+def binary_to_string(binary, n=8, b=2):
+    return "".join( [ chr( int(binary[i: i+n], b) ) for i in range(0, len(binary), n) ] )
